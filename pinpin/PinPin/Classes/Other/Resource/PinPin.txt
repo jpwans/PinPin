@@ -1,0 +1,118 @@
+竞赛相关
+1、赛事列表点击  进入  赛事详情；
+2、根据时间和自己在该赛事中的状态 来显示最下方的按钮； 按钮（1. 开始报名；2.前往参加模拟比赛；3.前往参加正式比赛；4. 等待查分；5. 查分；6. 报名已结束－－灰；7. 比赛已结束－－报名但未参加比赛  8,报名未开始）
+3、获取学生状态（报名，未报名，已比赛）
+3.1、学生状态：未报名
+在结束竞赛时间范围内未报名可以报名。
+在开始报名时间到结束竞赛范围之外 不能报名
+3.2、学生状态：已报名
+已报名未开始竞赛可以答模拟题
+已报名开始竞赛可以答正式题
+已报名赛事结束 （赛事已结束）
+3.3、学生状态：已比赛
+已比赛的等待查分
+3.4、学生状态：（已报名没参加比赛）
+不管有没有参加比赛，比赛结束后都显示查分，没参加比赛
+
+4、报名
+4.1、获取站点信息
+4.2、根据站点信息获取学校
+4.3、获取人群组
+
+5、比赛
+5.1、跟据学员赛事获取对应的题库并保存到本地数据库
+5.2、做题 所做的题目的选项都应该存放到记录表里面
+5.3、模拟试题，做完之后可以算出总分。
+5.4、正式考题，提交的时候传递题目ID 和选项（A/B/C/D）
+
+6、查询
+6.1、默认的是自己的编号，点击查询按钮查询
+6.2、如果要查询他人的删除掉自己的编号 输入别人的编号 点击查询就可以查询了。=========================================
+
+
+
+关于题目表结构说明
+
+
+
+
+@interface ComptitionDB : NSManagedObject   //竞赛表
+
+@property (nonatomic, retain) NSString * cId;//主健， uuid生成
+@property (nonatomic, retain) NSString * comptitonId;
+@property (nonatomic, retain) NSString * comptitonName;
+@property (nonatomic, retain) NSString * createTime;
+@property (nonatomic, retain) NSString * createUser;
+@property (nonatomic, retain) NSString * groupName;
+@property (nonatomic, retain) NSString * groupType;
+@property (nonatomic, retain) NSString * testType;
+@property (nonatomic, retain) NSString * isSubmit;  //是否提交
+
+
+@end
+
+
+
+@interface QuestionBankDB : NSManagedObject //大题表
+subjectid；//主健
+@property (nonatomic, retain) NSString * libraryTypeId;//
+@property (nonatomic, retain) NSString * chosenType;
+@property (nonatomic, retain) NSString * libraryDescription;
+@property (nonatomic, retain) NSString * librarySetting;
+@property (nonatomic, retain) NSString * score;
+@property (nonatomic, retain) NSString * choiceShowType;
+@property (nonatomic, retain) NSString * cId;  //外健
+
+@end
+
+
+@interface LibraryBankDB : NSManagedObject  //小题表
+subjectid；外健
+@property (nonatomic, retain) NSString * libraryBankAnswers;
+@property (nonatomic, retain) NSString * libraryBankChoice;
+@property (nonatomic, retain) NSString * libraryBankChoiceType;
+@property (nonatomic, retain) NSString * libraryBankContent;
+@property (nonatomic, retain) NSString * libraryBankId;
+@property (nonatomic, retain) NSString * libraryBankPic;
+@property (nonatomic, retain) NSString * libraryBankVoice;
+@property (nonatomic, retain) NSString * libraryTypeId; //外健
+
+@end
+
+
+@interface RecordDB : NSManagedObject  //考试记录表
+
+@property (nonatomic, retain) NSString * recordId;//记录ID  主健
+@property (nonatomic, retain) NSString * cId;//外健
+@property (nonatomic, retain) NSString * isTrue;  //0错的  1 对的
+@property (nonatomic, retain) NSString * libraryBankId; //
+@property (nonatomic, retain) NSString * myChoose;// 我的选择
+@property (nonatomic, retain) NSString * score;//分数
+@property (nonatomic, retain) NSString * simulationCount;//模拟次数
+@property (nonatomic, retain) NSString * createTime;
+@property (nonatomic, retain) NSString * answerTime;
+@property (nonatomic, retain) NSString * updateTime;
+
+@end
+
+
+存储思路：
+1. 通过接口，获取考试题目，保存到ComptitionDB，LibraryDB；
+2. 具体题目展现在 答题界面；
+3. 提交答案， 保存到  RecordDB，同时调用接口，保存。
+
+
+判断 是否
+
+根据赛事ID 和TYPE（模拟）来获取
+
+
+
+
+
+
+
+
+
+
+

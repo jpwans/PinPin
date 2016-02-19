@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14F27" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="ComptitionDB" representedClassName="ComptitionDB" syncable="YES">
+        <attribute name="cId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="comptitonId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="comptitonName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="createTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="createUser" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="groupName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="groupType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isSubmit" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="testType" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="LibraryBankDB" representedClassName="LibraryBankDB" syncable="YES">
+        <attribute name="libraryBankAnswers" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="libraryBankChoice" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="libraryBankChoiceType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="libraryBankContent" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="libraryBankId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="libraryBankPic" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="libraryBankVoice" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="subjectId" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="QuestionBankDB" representedClassName="QuestionBankDB" syncable="YES">
+        <attribute name="choiceShowType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="chosenType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="libraryDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="librarySetting" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="libraryTypeId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="score" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="subjectId" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="RecordDB" representedClassName="RecordDB" syncable="YES">
+        <attribute name="answerTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="createTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isTrue" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="libraryBankId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="myChoose" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recordId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="score" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="simulationCount" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="updateTime" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="ComptitionDB" positionX="-63" positionY="-18" width="128" height="180"/>
+        <element name="LibraryBankDB" positionX="-9" positionY="153" width="128" height="165"/>
+        <element name="QuestionBankDB" positionX="-45" positionY="117" width="128" height="165"/>
+        <element name="RecordDB" positionX="-36" positionY="99" width="128" height="195"/>
+    </elements>
+</model>

@@ -12,7 +12,6 @@
 * [拼拼](https://github.com/MoPellet/PinPin)
 
     一、应用介绍
-    应用介绍
     拼拼(pinpin)——全国最专业的拼读英语（Phonics）线上工具。开展拼读英语课程必装软件。同时联合CCTV中学生频道开展国内最权威拼读英语电视大赛。
 
     拼拼(pinpin)1.0版本，提供——
@@ -26,7 +25,7 @@
 
     拼拼线下教材在市场已经使用13年之久，结合线上工具，将成为老师们开展拼读课程的最佳帮手。
 
-    官方网站：www.pinpinenglish.com(了解pinpin教材)
+    官方网站：[www.pinpinenglish.com](www.pinpinenglish.com)(了解pinpin教材)
     官方微信:拼拼英语(PinpinPhonics)
 
 

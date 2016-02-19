@@ -11,8 +11,8 @@
 * [MOMenuView](https://github.com/MoPellet/MOMenuView)
 * [拼拼](https://github.com/MoPellet/PinPin)
 
-    一、应用介绍
-    
+一、应用介绍
+------- 
     拼拼(pinpin)——全国最专业的拼读英语（Phonics）线上工具。开展拼读英语课程必装软件。同时联合CCTV中学生频道开展国内最权威拼读英语电视大赛。
 
     拼拼(pinpin)1.0版本，提供——

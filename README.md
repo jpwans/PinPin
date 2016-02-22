@@ -27,9 +27,32 @@
 
 拼拼线下教材在市场已经使用13年之久，结合线上工具，将成为老师们开展拼读课程的最佳帮手。
 
+
+二、应用地址
+------- 
 * 官方网站：[www.pinpinenglish.com](http://www.pinpinenglish.com)(了解pinpin教材)
 * 官方微信:拼拼英语(PinpinPhonics)
-* 下载地址:[拼拼英语](https://www.pgyer.com/YY1g)
+* 下载地址:[拼拼英语](https://www.pgyer.com/YY1g)（密码:pinpin）
+
+三、第三方框架
+* [SMS_SDK]()
+* 友盟社会化分享
+* 友盟统计
+* MWPhotoBrowser
+* DACircularProgress
+* MKNetworkKit
+* 七牛云存储
+* AFNetworking
+* fmdb
+* MBProgressHUD
+* MJExtension
+* MJRefresh
+* SDWebImage
+* HMSegmentedControl
+* ImagePlayerView
+* KrVideoPlayer
+* GTMBase64
+
 
 
 

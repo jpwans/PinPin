@@ -61,7 +61,7 @@ typedef NSArray * (^MJIgnoredCodingPropertyNames)();
  *  @param newValueFormOldValue 用于过滤字典中的值
  */
 + (void)setupNewValueFormOldValue:(MJNewValueFormOldValue)newValueFormOldValue;
-+ (id)getNewValueFormOldValue:(__weak id)oldValue object:(__weak id)object property:(__weak MJProperty *)property;
++ (id)getNewValueFormOldValue:( id)oldValue object:( id)object property:( MJProperty *)property;
 
 #pragma mark - key配置
 /**
